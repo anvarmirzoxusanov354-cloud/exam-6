@@ -1,4 +1,8 @@
 import React from 'react';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const AppFooter = () => {
   return (
@@ -85,10 +89,11 @@ const AppFooter = () => {
           
           
           <div className="flex gap-6">
-            <img src="/fb-icon.png" alt="FB" className="w-5 h-5 cursor-pointer" />
-            <img src="/tw-icon.png" alt="TW" className="w-5 h-5 cursor-pointer" />
-            <img src="/ig-icon.png" alt="IG" className="w-5 h-5 cursor-pointer" />
-            <img src="/in-icon.png" alt="IN" className="w-5 h-5 cursor-pointer" />
+            <FacebookIcon/>
+            <TwitterIcon/>
+            <InstagramIcon/>
+            <LinkedInIcon/>
+            
           </div>
         </div>
       </div>
