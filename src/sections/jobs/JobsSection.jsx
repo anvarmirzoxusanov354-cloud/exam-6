@@ -16,7 +16,7 @@ const jobs = [
 const JobsSection = () => {
   return (
     <section className="bg-[#eef8f9] py-16 px-8 font-sans">
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="max-w-7xl mx-auto grid grid-cols-3 gap-8">
         {jobs.map((job) => (
           <div key={job.id} className="bg-white p-8 hover:shadow-lg transition-shadow">
             <h3 className="text-base font-bold text-[#1d2130] mb-2">{job.title}</h3>

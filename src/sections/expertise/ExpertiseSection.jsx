@@ -5,14 +5,14 @@ import Ou3 from "../../assets/Ou3.svg"
 
 const ExpertiseSection = () => {
   return (
-    <section className="bg-[#eef8f9] py-20 px-4 md:px-10 lg:px-20 font-sans">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="bg-[#eef8f9] py-20 px-4 font-sans">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 gap-12 items-center">
         
         <div className="space-y-6">
           <h4 className="text-gray-600 uppercase tracking-widest text-sm font-semibold">
             Our Expertise
           </h4>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1d2130] leading-tight">
+          <h2 className="text-4xl font-bold text-[#1d2130] leading-tight">
             We want to get local identification in every corner of the world in this era of global citizenship
           </h2>
           <p className="text-gray-500 leading-relaxed max-w-lg">

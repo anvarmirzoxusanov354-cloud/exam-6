@@ -44,6 +44,8 @@ const jobsData = {
   },
 };
 
+
+
 const JobDetails = () => {
   const { jobId } = useParams();
   const job = jobsData[jobId] || jobsData['full-stack-developer'];
@@ -53,8 +55,8 @@ const JobDetails = () => {
     <div className="font-sans bg-white">
 
       <section className="py-20 px-8 bg-white border-b">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10">
-          <div className="max-w-xl">
+        <div className="max-w-6xl mx-auto flex flex-row justify-between items-start gap-20">
+          <div className="flex-1">
             <Link to="/career" className="text-blue-600 text-sm font-semibold mb-4 inline-block hover:underline">
                ← Back to Careers
             </Link>
@@ -70,7 +72,7 @@ const JobDetails = () => {
             </button>
           </div>
 
-          <div className="bg-[#FFEAD5] p-10 rounded-lg w-full md:w-96 relative">
+          <div className="bg-[#FFEAD5] p-10 rounded-lg w-[400px] flex-shrink-0 relative">
             <div className="absolute top-0 right-0 flex translate-x-1/2 -translate-y-1/2">
                 <div className="w-6 h-6 bg-orange-400"></div>
                 <div className="w-6 h-6 bg-blue-600"></div>
@@ -105,7 +107,7 @@ const JobDetails = () => {
 
           <div className="text-gray-600 leading-relaxed min-h-[300px]">
             {activeTab === 'Details' && (
-              <ul className="list-disc pl-5 space-y-4">
+              <ul className="grid grid-cols-2 gap-x-10 gap-y-4 list-disc pl-5">
                 <li>Create and edit video content for multi-platform use and distribution for social media channels.</li>
                 <li>Design & Create highly engaging industry-related content in both photo, gif & video format</li>
                 <li>Publish Posts on various social media channels</li>
@@ -114,7 +116,7 @@ const JobDetails = () => {
               </ul>
             )}
             {activeTab === 'Requirements' && (
-              <ul className="list-disc pl-5 space-y-4">
+              <ul className="grid grid-cols-2 gap-x-10 gap-y-4 list-disc pl-5">
                 <li>3+ years of experience in similar role.</li>
                 <li>Strong portfolio of design and video projects.</li>
                 <li>Proficiency in Adobe Creative Suite (Premiere, After Effects, Photoshop).</li>
@@ -123,7 +125,7 @@ const JobDetails = () => {
               </ul>
             )}
             {activeTab === 'Responsibilities' && (
-              <ul className="list-disc pl-5 space-y-4">
+              <ul className="grid grid-cols-2 gap-x-10 gap-y-4 list-disc pl-5">
                 <li>Collaborate with the marketing team to define content strategy.</li>
                 <li>Ensure brand consistency across all visual assets.</li>
                 <li>Stay up-to-date with digital media trends and tools.</li>
@@ -139,32 +141,38 @@ const JobDetails = () => {
       <section id="apply-form" className="py-20 px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-extrabold text-[#1d2130] mb-12">Apply Now</h2>
-          <form onSubmit={(e) => { e.preventDefault(); alert('Application submitted successfully!'); }} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex flex-col">
-              <label className="text-sm font-semibold mb-2">First Name</label>
-              <input type="text" className="bg-[#F9F9FB] p-4 rounded outline-none border focus:border-blue-300" placeholder="First Name" />
+          <form onSubmit={(e) => { e.preventDefault(); alert('Application submitted successfully!'); }} className="space-y-6">
+            <div className="grid grid-cols-2 gap-6">
+              <div className="flex flex-col">
+                <label className="text-sm font-semibold mb-2">First Name</label>
+                <input type="text" className="bg-[#F9F9FB] p-4 rounded outline-none border focus:border-blue-300" placeholder="First Name" />
+              </div>
+              <div className="flex flex-col">
+                <label className="text-sm font-semibold mb-2">Last Name</label>
+                <input type="text" className="bg-[#F9F9FB] p-4 rounded outline-none border focus:border-blue-300" placeholder="Last Name" />
+              </div>
             </div>
-            <div className="flex flex-col">
-              <label className="text-sm font-semibold mb-2">Last Name</label>
-              <input type="text" className="bg-[#F9F9FB] p-4 rounded outline-none border focus:border-blue-300" placeholder="Last Name" />
+
+            <div className="grid grid-cols-2 gap-6">
+              <div className="flex flex-col">
+                <label className="text-sm font-semibold mb-2">Email Id</label>
+                <input type="email" className="bg-[#F9F9FB] p-4 rounded outline-none border focus:border-blue-300" placeholder="Email Id" />
+              </div>
+              <div className="flex flex-col">
+                <label className="text-sm font-semibold mb-2">Mobile No</label>
+                <input type="text" className="bg-[#F9F9FB] p-4 rounded outline-none border focus:border-blue-300" placeholder="Mobile No" />
+              </div>
             </div>
+
             <div className="flex flex-col">
-              <label className="text-sm font-semibold mb-2">Email Id</label>
-              <input type="email" className="bg-[#F9F9FB] p-4 rounded outline-none border focus:border-blue-300" placeholder="Email Id" />
-            </div>
-            <div className="flex flex-col">
-              <label className="text-sm font-semibold mb-2">Mobile No</label>
-              <input type="text" className="bg-[#F9F9FB] p-4 rounded outline-none border focus:border-blue-300" placeholder="Mobile No" />
-            </div>
-            <div className="md:col-span-2 flex flex-col">
               <label className="text-sm font-semibold mb-2">Why do you think you are good fit for Ether?</label>
               <textarea className="bg-[#F9F9FB] p-4 rounded outline-none border focus:border-blue-300 h-32" placeholder="Your message"></textarea>
             </div>
-            <div className="md:col-span-2 flex items-center gap-3 py-4">
+            <div className="flex items-center gap-3 py-4">
               <input type="checkbox" className="w-5 h-5 rounded border-gray-300" id="privacy" />
               <label htmlFor="privacy" className="text-sm text-gray-500">I agree to accept the privacy policy. We will add your contact details provided in this form to our system for contacting you regarding your request.</label>
             </div>
-            <div className="md:col-span-2">
+            <div>
               <button type="submit" className="bg-blue-600 text-white px-12 py-4 font-bold rounded hover:bg-blue-700 transition">
                 Submit Application →
               </button>

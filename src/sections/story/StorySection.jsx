@@ -2,9 +2,9 @@ import React from 'react';
 
 const StorySection = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-12 font-sans">
+    <section className="max-w-7xl mx-auto px-6 py-16 flex flex-row items-center gap-12 font-sans">
       
-      <div className="w-full lg:w-1/2">
+      <div className="w-1/2">
         <div className="flex items-center gap-2 mb-4">
           <div className="w-4 h-4 bg-indigo-600"></div>
           <span className="text-sm font-bold uppercase tracking-wider text-gray-800">
@@ -12,7 +12,7 @@ const StorySection = () => {
           </span>
         </div>
         
-        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+        <h2 className="text-4xl font-extrabold text-gray-900 leading-tight mb-6">
           From Startups to Titans of Industry
         </h2>
         
@@ -26,7 +26,7 @@ const StorySection = () => {
         </p>
       </div>
 
-      <div className="w-full lg:w-1/2 bg-[#FFEAD5] p-10 md:p-16 grid grid-cols-2 gap-y-12 gap-x-8">
+      <div className="w-1/2 bg-[#FFEAD5] p-10 grid grid-cols-2 gap-y-12 gap-x-8">
         
         <div className="flex flex-col">
           <span className="text-4xl font-bold text-gray-900 mb-2">1560+</span>

@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Ourn1 from "../../assets/Ourn1.png";
+
 
 const BlogSection = () => {
   return (
@@ -24,9 +26,9 @@ const BlogSection = () => {
             aim to attain the.
           </p>
 
-          <a href="#" className="mt-4 inline-flex items-center gap-2 text-blue-600 text-sm font-semibold">
+          <Link to="/blog-inner" className="mt-4 inline-flex items-center gap-2 text-blue-600 text-sm font-semibold">
             Read More →
-          </a>
+          </Link>
 
           <div className="flex items-center gap-3 mt-5 mb-5">
             <img

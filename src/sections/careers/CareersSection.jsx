@@ -17,7 +17,7 @@ const CareersSection = () => {
           Career at Finsweet
         </span>
 
-        <h2 className="mt-4 text-4xl md:text-5xl font-extrabold text-[#1d2130] leading-tight">
+        <h2 className="mt-4 text-4xl font-extrabold text-[#1d2130] leading-tight">
           We hired people who are <br />
           Always Passionate about <br />
           what they do

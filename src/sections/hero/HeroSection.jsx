@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <section className="relative w-full bg-white py-24 px-8 overflow-hidden font-sans">
       <div className="absolute top-20 left-12 w-8 h-8 bg-orange-200" />
-      <div className="absolute top-24 right-12 md:right-24">
+      <div className="absolute top-24 right-12">
         <img src={Shapes}  alt="Shapes logo"  className="w-12 h-auto" />
       </div>
       <div className="max-w-6xl mx-auto mt-12">
@@ -16,7 +16,7 @@ const HeroSection = () => {
           COMPANY
         </span>
 
-        <h1 className="mt-6 text-5xl md:text-6xl font-extrabold text-[#2D3142] leading-[1.1] max-w-3xl">
+        <h1 className="mt-6 text-5xl font-extrabold text-[#2D3142] leading-[1.1] max-w-3xl">
           Award-winning Company <br />
           seen and used by millions <br />
           around the world.

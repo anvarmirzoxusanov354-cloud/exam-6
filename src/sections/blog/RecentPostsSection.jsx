@@ -3,6 +3,7 @@ import Clear from "../../assets/Clear.png";
 import Clear1 from "../../assets/Clear1.png";
 import Clear2 from "../../assets/Clear2.png";
 import Ourn1 from "../../assets/Ourn1.png";
+import Images from "../../assets/Images.png"
 
 const RecentPostsSection = () => {
   return (

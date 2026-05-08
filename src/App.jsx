@@ -5,6 +5,9 @@ import About from './pages/About'
 import Articles from './pages/Articles'
 import Support from './pages/Support'
 import JobDetails from './pages/JobDetails'
+import BlogPageInner from './pages/BlogPageInner'
+import JobDetailDynamic from './sections/jobDetails/index'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 const App = () => {
   return (
@@ -14,7 +17,10 @@ const App = () => {
         <Route path='career' element={<About />} />
         <Route path='career/:jobId' element={<JobDetails />} />
         <Route path='blog' element={<Articles />} />
+        <Route path='blog-inner' element={<BlogPageInner />} />
+        <Route path='privacy-policy' element={<PrivacyPolicy />} />
         <Route path='contact' element={<Support />} />
+        <Route path='/job/:id' element={<JobDetailDynamic />} />
       </Route>
     </Routes>
   )

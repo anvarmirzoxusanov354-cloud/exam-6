@@ -7,6 +7,9 @@ import Team5 from '../../assets/Team6.png'
 import Team6 from '../../assets/Team6.png' 
 import Team7 from '../../assets/Team7.png'
 import Team8 from '../../assets/Team8.png'
+
+import { useNavigate } from 'react-router-dom';
+
 const teamMembers = [
   { id: 1, name: 'Marcus Reid',    role: 'CEO & Founder',    img: Team1, highlight: false },
   { id: 2, name: 'David Okafor',   role: 'Product Manager',  img: Team2, highlight: false },
@@ -17,6 +20,9 @@ const teamMembers = [
   { id: 7, name: 'Omar Hassan',    role: 'Backend Dev',      img: Team7, highlight: false },
   { id: 8, name: 'Lucas Stone',    role: 'Marketing Lead',   img: Team8, highlight: false },
 ];
+
+
+
 
 const TwitterIcon = () => (
   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -38,7 +44,7 @@ const LinkedinIcon = () => (
 
 const TeamSection = () => {
   const [hovered, setHovered] = useState(null);
-
+  const nagivate =useNavigate();
   return (
     <section className="bg-white py-20 px-8 font-sans">
       <div className="max-w-6xl mx-auto">
@@ -48,7 +54,7 @@ const TeamSection = () => {
           <span className="text-xs font-bold tracking-[0.2em] text-gray-500 uppercase">
             Meet Our Team
           </span>
-          <h2 className="mt-3 text-4xl md:text-5xl font-extrabold text-[#1d2130] leading-tight max-w-sm">
+          <h2 className="mt-3 text-4xl font-extrabold text-[#1d2130] leading-tight max-w-sm">
             Teamwork is the only way we work
           </h2>
           <p className="mt-4 text-gray-500 text-sm leading-relaxed max-w-xs">
@@ -61,8 +67,8 @@ const TeamSection = () => {
         
         <div className="grid grid-cols-4 gap-0">
           {teamMembers.map((member) => (
-            <div
-              key={member.id}
+            <div onClick={() => nagivate(`/job/${member.id}`)}
+              key={member.id} 
               className={`relative overflow-hidden cursor-pointer h-[280px] ${
                 member.highlight ? 'ring-4 ring-pink-500 ring-inset z-10' : ''
               }`}

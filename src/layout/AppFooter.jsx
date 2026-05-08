@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -62,7 +63,7 @@ const AppFooter = () => {
             <ul className="space-y-3 text-gray-600 text-sm font-semibold">
               <li className="cursor-pointer">About Us</li>
               <li className="cursor-pointer">Testimonial</li>
-              <li className="cursor-pointer">Privacy Policy</li>
+              <Link to="/privacy-policy" className="block cursor-pointer hover:text-blue-600">Privacy Policy</Link>
               <li className="cursor-pointer">Terms of use</li>
               <li className="cursor-pointer">Blog</li>
             </ul>
