@@ -69,7 +69,7 @@ const JobDetailDynamic = () => {
           <div className="grid grid-cols-2 gap-8">
             
             <div className="bg-white flex shadow-md overflow-hidden">
-              <img src={Templete_img} className="w-1/3 object-cover" alt="blog" />
+              <img src={Templete} className="w-1/3 object-cover" alt="blog" />
               <div className="p-8">
                 <p className="text-gray-400 text-xs mb-3">Jan 19, 2021</p>
                 <h4 className="text-xl font-bold mb-4">Today's best design trends for digital products</h4>
@@ -78,7 +78,7 @@ const JobDetailDynamic = () => {
             </div>
 
             <div className="bg-white flex shadow-md overflow-hidden">
-              <img src={Templete_img1} className="w-1/3 object-cover" alt="blog" />
+              <img src={Templete2} className="w-1/3 object-cover" alt="blog" />
               <div className="p-8">
                 <p className="text-gray-400 text-xs mb-3">Jan 19, 2021</p>
                 <h4 className="text-xl font-bold mb-4">A practical guide to building a brand strategy</h4>
