@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Clear from "../../assets/Clear.png";
 import Clear1 from "../../assets/Clear1.png";
 import Clear2 from "../../assets/Clear2.png";
@@ -16,7 +17,7 @@ const RecentPostsSection = () => {
 
         <div className="grid grid-cols-2 gap-6">
 
-          <div className="flex gap-4 items-start">
+          <Link to="/blog-inner" className="flex gap-4 items-start hover:opacity-80 transition-opacity">
             <img src={Clear} alt="post" className="w-36 h-28 object-cover flex-shrink-0" />
             <div>
               <h3 className="font-bold text-[#1d2130] text-sm leading-snug mb-3">
@@ -30,10 +31,10 @@ const RecentPostsSection = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
 
          
-          <div className="flex gap-4 items-start">
+          <Link to="/blog-inner" className="flex gap-4 items-start hover:opacity-80 transition-opacity">
             <img src={Clear1} alt="post" className="w-36 h-28 object-cover flex-shrink-0" />
             <div>
               <h3 className="font-bold text-[#1d2130] text-sm leading-snug mb-3">
@@ -47,10 +48,10 @@ const RecentPostsSection = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
 
          
-          <div className="flex gap-4 items-start">
+          <Link to="/blog-inner" className="flex gap-4 items-start hover:opacity-80 transition-opacity">
             <img src={Clear2} alt="post" className="w-36 h-28 object-cover flex-shrink-0" />
             <div>
               <h3 className="font-bold text-[#1d2130] text-sm leading-snug mb-3">
@@ -64,10 +65,10 @@ const RecentPostsSection = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
 
           
-          <div className="flex gap-4 items-start">
+          <Link to="/blog-inner" className="flex gap-4 items-start hover:opacity-80 transition-opacity">
             <img src={Ourn1} alt="post" className="w-36 h-28 object-cover flex-shrink-0" />
             <div>
               <h3 className="font-bold text-[#1d2130] text-sm leading-snug mb-3">
@@ -81,7 +82,7 @@ const RecentPostsSection = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
 
         </div>
       </div>

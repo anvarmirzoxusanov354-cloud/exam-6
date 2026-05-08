@@ -4,7 +4,7 @@ import Ourn1 from "../../assets/Ourn1.png";
 
 
 const BlogSection = () => {
-  return (
+  return ( 
     <section className="bg-white py-16 px-8 font-sans">
       <div className="max-w-6xl mx-auto flex gap-8 items-start">
 
@@ -42,7 +42,7 @@ const BlogSection = () => {
           </div>
 
           
-          <div className="relative">
+          <Link to="/blog-inner" className="relative block">
             <img
               src={Ourn1}
               alt="Blog cover"
@@ -53,7 +53,7 @@ const BlogSection = () => {
               <div className="w-6 h-6 bg-orange-400" />
               <div className="w-6 h-6 bg-blue-600" />
             </div>
-          </div>
+          </Link>
         </div>
 
         

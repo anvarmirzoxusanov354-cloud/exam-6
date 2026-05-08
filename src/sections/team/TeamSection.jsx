@@ -44,7 +44,7 @@ const LinkedinIcon = () => (
 
 const TeamSection = () => {
   const [hovered, setHovered] = useState(null);
-  const nagivate =useNavigate();
+  const navigate = useNavigate();
   return (
     <section className="bg-white py-20 px-8 font-sans">
       <div className="max-w-6xl mx-auto">
@@ -67,7 +67,7 @@ const TeamSection = () => {
         
         <div className="grid grid-cols-4 gap-0">
           {teamMembers.map((member) => (
-            <div onClick={() => nagivate(`/job/${member.id}`)}
+            <div onClick={() => navigate(`/job/${member.id}`)}
               key={member.id} 
               className={`relative overflow-hidden cursor-pointer h-[280px] ${
                 member.highlight ? 'ring-4 ring-pink-500 ring-inset z-10' : ''

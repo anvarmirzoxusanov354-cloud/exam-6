@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Clear from "../../assets/Clear.png";
 import Clear1 from "../../assets/Clear1.png";
 import Clear2 from "../../assets/Clear2.png";
@@ -14,7 +15,7 @@ const AllPostsSection = () => {
         <div className="grid grid-cols-3 gap-6">
 
          
-          <div>
+          <Link to="/blog-inner" className="block hover:opacity-80 transition-opacity">
             <img src={Clear} alt="post" className="w-full h-48 object-cover mb-4" />
             <h3 className="font-bold text-[#1d2130] text-sm leading-snug mb-2">
               We aim to attain the greatest satisfaction for our clients
@@ -29,10 +30,10 @@ const AllPostsSection = () => {
                 <p className="text-xs text-gray-400">Jan 19, 2021</p>
               </div>
             </div>
-          </div>
+          </Link>
 
         
-          <div>
+          <Link to="/blog-inner" className="block hover:opacity-80 transition-opacity">
             <img src={Clear1} alt="post" className="w-full h-48 object-cover mb-4" />
             <h3 className="font-bold text-[#1d2130] text-sm leading-snug mb-2">
               We aim to attain the greatest satisfaction for our clients
@@ -47,10 +48,10 @@ const AllPostsSection = () => {
                 <p className="text-xs text-gray-400">Jan 19, 2021</p>
               </div>
             </div>
-          </div>
+          </Link>
 
          
-          <div>
+          <Link to="/blog-inner" className="block hover:opacity-80 transition-opacity">
             <img src={Clear2} alt="post" className="w-full h-48 object-cover mb-4" />
             <h3 className="font-bold text-[#1d2130] text-sm leading-snug mb-2">
               We aim to attain the greatest satisfaction for our clients
@@ -65,10 +66,10 @@ const AllPostsSection = () => {
                 <p className="text-xs text-gray-400">Jan 19, 2021</p>
               </div>
             </div>
-          </div>
+          </Link>
 
           
-          <div>
+          <Link to="/blog-inner" className="block hover:opacity-80 transition-opacity">
             <img src={Ourn1} alt="post" className="w-full h-48 object-cover mb-4" />
             <h3 className="font-bold text-[#1d2130] text-sm leading-snug mb-2">
               We aim to attain the greatest satisfaction for our clients
@@ -83,10 +84,10 @@ const AllPostsSection = () => {
                 <p className="text-xs text-gray-400">Jan 19, 2021</p>
               </div>
             </div>
-          </div>
+          </Link>
 
         
-          <div>
+          <Link to="/blog-inner" className="block hover:opacity-80 transition-opacity">
             <img src={Clear} alt="post" className="w-full h-48 object-cover mb-4" />
             <h3 className="font-bold text-[#1d2130] text-sm leading-snug mb-2">
               We aim to attain the greatest satisfaction for our clients
@@ -101,10 +102,10 @@ const AllPostsSection = () => {
                 <p className="text-xs text-gray-400">Jan 19, 2021</p>
               </div>
             </div>
-          </div>
+          </Link>
 
         
-          <div>
+          <Link to="/blog-inner" className="block hover:opacity-80 transition-opacity">
             <img src={Clear2} alt="post" className="w-full h-48 object-cover mb-4" />
             <h3 className="font-bold text-[#1d2130] text-sm leading-snug mb-2">
               We aim to attain the greatest satisfaction for our clients
@@ -119,7 +120,7 @@ const AllPostsSection = () => {
                 <p className="text-xs text-gray-400">Jan 19, 2021</p>
               </div>
             </div>
-          </div>
+          </Link>
 
         </div>
       </div>
