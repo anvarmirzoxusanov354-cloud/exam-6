@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
       </div>
 
       <div className="max-w-5xl mx-auto px-8 mb-20">
-        <div className="bg-[#EEF8F9] border border-blue-400 p-20 relative">
+        <div className="bg-[#EEF8F9] p-20 relative">
           
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-extrabold mb-8">
@@ -64,7 +64,7 @@ const PrivacyPolicy = () => {
               </h2>
 
               <p>
-                Business partners, suppliers and sub-contractors (“Affiliates”): Affiliates may use this information to help provide, understand, and improve our services and Affiliate’s own services for the performance of any contract we enter into 
+                Business partners, suppliers and sub-contractors (“Affiliates”): Affiliates may use this information to help provide, understand, and improve our services and Affiliate's own services for the performance of any contract we enter into 
 
                 Financial Institutions and Auditors: In order to complete third party financial, technical and legal audits of our operations to help us operate our business, we may need to share your information with financial institutions and auditors.
 
